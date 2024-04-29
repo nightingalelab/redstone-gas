@@ -1,0 +1,23 @@
+[build-system]
+requires = ["setuptools>=61.0"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "redsim"
+version = "1.0.1"
+authors = [{ name = "Maria Silva", email = "misilva73@gmail.com" }]
+description = "Simulation framework for Gas Management in Redstone"
+readme = "README.md"
+requires-python = ">=3.8"
+dependencies = ["numpy", "pandas", "scipy", "tqdm"]
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: OS Independent",
+]
+
+[tool.setuptools.packages.find]
+namespaces = false
+
+[project.urls]
+Homepage = "https://github.com/latticexyz/redstone-gas"
